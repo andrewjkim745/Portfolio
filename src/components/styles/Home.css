@@ -1,0 +1,64 @@
+
+
+
+h1 {
+    display: block;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    
+}
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    height: 100vh;
+    background-color: rgb(25, 25, 25);
+    animation: fadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+.text-changer {
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+
+.github:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+.mail:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+
+p {
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.cell-number {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mail {
+    margin-bottom: 3px;
+}
+
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,58 @@
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250vh;
+    background-color: rgb(25, 25, 25);
+}
+
+.first-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.pic {
+    z-index: -1;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: black;
+}
+.second-container p {
+    color: black;
+    padding: 10px
+}
+.second-container img {
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.first-box {
+    background-color: white;
+}
+
+.first-box {
+    padding: 50px;
+}
+
+.second-box {
+    margin-top: 100px;
+    padding: 2em;
+    /* padding: 50px; */
+    background-color: white;
+}
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 200px; */
+    width: 50%;
+}
+

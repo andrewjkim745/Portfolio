@@ -1,38 +1,27 @@
+
+
 .App {
   text-align: center;
+  background-color: rgb(25, 25, 25);
+  height: 100%;
+  /* height: 150vh; */
+  /* width: 100%; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light-mode .App, .light-mode h1, .light-mode .nav-container, .light-mode p, .light-mode .home-link, .light-mode .linkedin-link, .light-mode .github-link, .light-mode .mail-link, .light-mode h2, .light-mode .portfolio-container, .light-mode main, .light-mode .first-container, .light-mode .about-container, .light-mode .button, .light-mode .landing-page-container {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.light-mode .nav-links, .light-mode a, .light-mode .first-box, .light-mode .first-box h3, .light-mode .first-box p, .light-mode .second-box, .light-mode .second-box h3, .light-mode .second-box p  {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(25, 25, 25);
 }

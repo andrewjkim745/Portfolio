@@ -1,0 +1,177 @@
+.project-1-description {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+}
+
+.project-1-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: 2px yellow;
+}
+
+
+main {
+    border-color: 2px solid yellow;
+}
+.top-container {
+    margin-bottom: 80px;
+}
+
+.project-folder {
+    width: 10%;
+}
+.hide {
+    margin-bottom: 2em;
+}
+
+
+.project-card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10em;
+    opacity: 1;
+    animation: fadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    border: 2px solid grey;
+    width: 50rem;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+.js {
+    width: 48px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.buttons {
+    margin-bottom: 50px;
+
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    width: 50em;
+    height: 5em;
+    margin: 2em;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.View-Project {
+    color: white;
+}
+
+button {
+    background:transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    color: #0099CC;
+    cursor: pointer;
+    transition: ease-in .2s;
+
+}
+
+button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 100px; */
+    opacity: 1;
+    animation: fadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    background-color: rgb (25,25,25);
+    animation-duration: 2s;
+    /* height: 400vh; */
+
+}
+
+.portfolio-title {
+    /* z-index: -1; */
+    animation: fadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    background-color: rgb (25,25,25);
+    animation-duration: 2s;
+    height: 100vh;
+}
+
+.portfolio-title h1 {
+    margin-top: 5em;
+    font-size: 3em;
+    z-index: 1;
+}
+
+.hide, .project-folder {
+    cursor: pointer;
+}
+
+.portfolio-container div {
+    /* height: 100vh; */
+
+}
+
+.gif-container {
+    border-radius: 50px;
+}
+
+
+.gif1 {
+    border-radius: 6px;
+
+    
+}
+.gif2 {
+    border-radius: 6px;
+
+    
+}
+.gif3 {
+    border-radius: 6px;
+
+    
+}
+.sql {
+    margin-bottom: 3px;
+}
+
+.View-Project {
+    background-color: grey;
+    border-radius: 20px;
+    width: 7em;
+}
+
+.language1 {
+    width: 
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

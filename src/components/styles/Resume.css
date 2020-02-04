@@ -1,0 +1,21 @@
+.resume {
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    opacity: 1;
+    animation: fadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    margin-top: 100px;
+}
+
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
