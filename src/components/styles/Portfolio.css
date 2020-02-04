@@ -122,7 +122,9 @@ button:hover {
     z-index: 1;
 }
 
-.hide, .project-folder {
+.hide:hover, .project-folder:hover {
+    transform: scale(1.3);
+    transition: ease-in .2s;
     cursor: pointer;
 }
 

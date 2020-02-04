@@ -18,7 +18,7 @@ const Home = () => {
 
             </h1>
             <div className='contact-container'>
-                <p>Contact Me At</p>
+                <p>Contact Me and Check out the code for this page</p>
                 <div className='icons'>
                     <a className='linkedin-link' href='https://www.linkedin.com/in/andrew-kim-0705/'>
                         <img className='linkedin' src='https://i.imgur.com/PGt3ToU.png'></img>
