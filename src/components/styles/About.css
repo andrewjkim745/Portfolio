@@ -101,7 +101,7 @@ h3 {
         font-size: 3rem;
     }
     .about-container {
-        height: 1000vh;
+        height: 1000vh !important;
     }
     .pic {
         width: 250px;

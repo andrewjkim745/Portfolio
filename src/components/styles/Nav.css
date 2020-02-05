@@ -96,17 +96,17 @@ a:hover {
   @media only screen and (max-width: 375px) {
 
     a {
-      font-size: 1.5em;
+      font-size: .9em;
     }
 
     
     .nav-links {
       width: 35em;
-      height: 7em;
+      height: 5em !important;
     }
 
     .asianMan {
-      width: 6em;
+      /* width: 10em !important; */
     }
 
 

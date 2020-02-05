@@ -206,17 +206,17 @@ button:hover {
 
 @media only screen and (max-width: 375px) {
     .portfolio-title {
-        font-size: 2em;
+        font-size: 2em !important;
         margin-bottom: 350px;
     }
 
 
     .portfolio-container {
-        height: 990vh;
+        height: 1000vh !important;
     }
 
     .project-folder, .hide {
-        width: 20%;
+        width: 20% !important;
     }
 
     .project-card {
