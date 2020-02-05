@@ -25,3 +25,32 @@ main {
   width: 100%;
   background-color: rgb(25, 25, 25);
 }
+
+
+@media only screen and (max-width: 360px) {
+
+  .App {
+    width: 360px;
+  }
+
+  .landing-page-container {
+    height: 100vh;
+  }
+
+  
+}
+
+@media only screen and (max-width: 375px) {
+  .App {
+    width: 812px;
+    height: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 411px) {
+  .App {
+    width: 565px;
+    height: 100%;
+  }
+}

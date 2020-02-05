@@ -56,3 +56,74 @@ h3 {
     width: 50%;
 }
 
+
+
+@media only screen and (max-width: 360px) {
+    
+
+    .about-container {
+        height: 1000vh;
+    }
+
+    .second-container {
+        width: 90%;
+    }
+
+    
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h1 {
+        /* font-size: 2em; */
+    }
+    
+
+}
+
+@media only screen and (max-width: 375px) {
+
+
+    .second-container {
+        width: 90%
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    .about-container {
+        height: 1000vh;
+    }
+    .pic {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+
+    .second-container {
+        width: 90%;
+    }
+
+    .about-container {
+        height: 400vh;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+

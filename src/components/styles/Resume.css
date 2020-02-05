@@ -11,11 +11,49 @@
 }
 
 
+
+
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+@media only screen and (max-width: 360px) {
+
+    .resume-container {
+        height: 220vh;
+    }
+
+    .resume {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .resume-container {
+        height: 220vh;
+    }
+
+    .resume {
+        width: 90%;
+        height: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 411px) {
+    .resume-container {
+        height: 220vh;
+    }
+
+    .resume {
+        width: 95%;
+        height: 60%;
     }
 }

@@ -8,6 +8,8 @@ h1 {
     font-size: 50px;
     
 }
+
+
 .landing-page-container {
     display: flex;
     flex-direction: column;
@@ -62,3 +64,63 @@ p {
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 360px) {
+
+    h1 {
+      font-size: 4em;
+    }
+
+    .landing-page-container {
+        height: 210vh;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    a { 
+        font-size: 1.2em;
+    }
+  
+    
+  }
+  @media only screen and (max-width: 375px) {
+
+    h1 {
+      font-size: 3.5em;
+    }
+
+    .landing-page-container {
+        height: 210vh;
+    }
+
+    .icons img {
+        width: 10%;
+    }
+
+    .contact-container p {
+        font-size: 2em;
+    }
+
+    /* a { 
+        font-size: 1.3em;
+    } */
+  
+    
+  }
+
+  @media only screen and (max-width: 411px) {
+      h1 {
+          font-size: 2.5em;
+      }
+      p {
+          font-size: 1.5em;
+      }
+      .landing-page-container {
+          height: 130vh;
+      }
+  }
+
+
+

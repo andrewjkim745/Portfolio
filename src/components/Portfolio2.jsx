@@ -90,7 +90,7 @@ class Portfolio2 extends Component {
 
                                 </div>
                                 <div className='description'>
-                                    <p>{project.description}</p>
+                                    <p className='paragraph'>{project.description}</p>
                                     <a className='View-Project' href={project.href}>View Project</a>
                                 </div>
                                 

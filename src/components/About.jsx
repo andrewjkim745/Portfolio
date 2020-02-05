@@ -17,7 +17,7 @@ class About extends React.Component {
                         My Journey as a Developer
 
                     </h3>
-                    <div>
+                    <div className='paragraph'>
                         <p >
                             I started using computers at a very young age and was always curious about the nuances of the web. It never occurred to me that what I enjoy the most was always right in front of me! About a few months ago I decided to finally pursue my interest in computers and learn in a structured environment. I attended a 12 week software engineering immersive at General Assembly a rigorous bootcamp which tested my ability to learn, adapt, and deal with stressful situations.
 
@@ -33,7 +33,7 @@ class About extends React.Component {
                     <h3>
                         Programming
                     </h3>
-                    <div>
+                    <div className='paragraph'>
                         <p>
                             I became passionate about Software Engineering/Web Development after attending school at Stony Brook University for 4 years as an economics major. I spent a lot of time aimlessly working not knowing what I truly could see myself doing for the rest of my life until of course I stumbled upon programming. After realizing that I could make all these applications/websites that I use daily myself, I embarked on my journey to learn how to code!
                         </p>

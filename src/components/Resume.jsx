@@ -3,7 +3,7 @@ import './styles/Resume.css'
 
 const Resume = () => {
     return (
-        <div>
+        <div className='resume-container'>
             <img className='resume' src='https://i.imgur.com/WLOhrBe.jpg'></img>
         </div>
     )
