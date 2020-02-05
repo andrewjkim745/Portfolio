@@ -77,23 +77,16 @@ a:hover {
   @media only screen and (max-width: 360px) {
 
     .nav-links {
+      height: 6em !important;
       
-    }
-
-    .nav-container {
-      
-    }
-
-    .moon {
-
     }
 
     a {
-      font-size: .6em;
+      font-size: .9em !important;
     }
 
     .asianMan {
-      /* width:  */
+      width: 8em !important;
     }
   
     
@@ -130,5 +123,17 @@ a:hover {
       width: 25em;
     }
 
+
+  }
+
+  @media only screen and (max-width: 414px) {
+    a {
+      font-size: .9em;
+
+    }
+
+    .nav-links {
+      width: 25em;
+    }
 
   }

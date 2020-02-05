@@ -62,7 +62,7 @@ h3 {
     
 
     .about-container {
-        height: 1000vh;
+        height: 1000vh !important;
     }
 
     .second-container {
@@ -110,6 +110,24 @@ h3 {
 
 @media only screen and (max-width: 411px) {
 
+    .second-container {
+        width: 90%;
+    }
+
+    .about-container {
+        height: 400vh;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
     .second-container {
         width: 90%;
     }

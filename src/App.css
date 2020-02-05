@@ -30,11 +30,7 @@ main {
 @media only screen and (max-width: 360px) {
 
   .App {
-    width: 360px;
-  }
-
-  .landing-page-container {
-    height: 100vh;
+    width: 600px !important;
   }
 
   
@@ -53,4 +49,12 @@ main {
     width: 565px;
     height: 100%;
   }
+}
+
+@media only screen and (max-width: 414px) {
+  .App {
+    width: 565px;
+    height: 100%;
+  }
+    
 }

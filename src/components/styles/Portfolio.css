@@ -196,6 +196,10 @@ button:hover {
     .portfolio-container {
         height: 990vh;
     }
+
+    .View-Project {
+        font-size: 1.5em !important;
+    }
 }
 
 
@@ -236,6 +240,25 @@ button:hover {
 }
 
 @media only screen and (max-width: 411px) {
+    .project-folder, .hide {
+        width: 20%;
+    }
+
+    .portfolio-container {
+        height: 800vh;
+    }
+    .project-card {
+        width: 90%;
+    }
+    .languages {
+        width: 80%;
+    }
+    .View-Project {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 414px) {
     .project-folder, .hide {
         width: 20%;
     }

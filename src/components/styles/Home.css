@@ -72,15 +72,11 @@ p {
     }
 
     .landing-page-container {
-        height: 210vh;
+        height: 150vh !important;
     }
 
     p {
         font-size: 2em;
-    }
-
-    a { 
-        font-size: 1.2em;
     }
   
     
@@ -121,6 +117,20 @@ p {
           height: 130vh;
       }
   }
+
+  @media only screen and (max-width: 414px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .landing-page-container {
+        height: 150vh;
+    }
+}
 
 
 

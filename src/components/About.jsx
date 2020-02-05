@@ -19,7 +19,7 @@ class About extends React.Component {
                     </h3>
                     <div className='paragraph'>
                         <p >
-                            I started using computers at a very young age and was always curious about the nuances of the web. It never occurred to me that what I enjoy the most was always right in front of me! About a few months ago I decided to finally pursue my interest in computers and learn in a structured environment. I attended a 12 week software engineering immersive at General Assembly a rigorous bootcamp which tested my ability to learn, adapt, and deal with stressful situations.
+                            I started using computers at a very young age and was always curious about the nuances of the web. About a year ago I decided to finally pursue my interest in computers and learn in a structured environment. I attended a 12 week software engineering immersive at General Assembly a rigorous bootcamp which tested my ability to learn, adapt, and deal with stressful situations.
 
                             
                         </p>
