@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './styles/Portfolio.css'
+import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image'
+
 
 
 
@@ -71,11 +73,13 @@ class Portfolio2 extends Component {
 
 
     renderComponents = () => {
-        console.log('hello')
         if (this.state.show) {
             return (
                 <>
-
+                <div className='scroll'>
+                    <a><span></span></a>
+                    <p>Scroll</p>
+                </div>
                     {this.state.projects.map(project => {
                         return (
                             <div className='project-card' key={project.id}>
@@ -131,13 +135,17 @@ class Portfolio2 extends Component {
     }
 
 
+    renderMouse = () => {
+
+    }
+
+
     render() {
         return (
             <div className='portfolio-container'>
                 <div className='portfolio-title'>
                     <h1 >{this.state.show === false ? this.state.title : 'Click again to Hide'}</h1>
-                    <img className='hide' src={this.state.show === true ? this.state.hide : ''} onClick={this.onClick}></img>
-                    <img className='project-folder' src={this.state.show === false ? this.state.folder : ''} onClick={this.onClick}></img>
+                    <img className='hide' src={this.state.show === true ? this.state.hide : this.state.folder} onClick={this.onClick}></img>
                 </div>
                     {this.renderComponents()}
                 

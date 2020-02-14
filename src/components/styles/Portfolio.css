@@ -19,7 +19,8 @@ main {
 }
 
 .project-folder {
-    width: 10%;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 .project-folder:active {
@@ -46,6 +47,8 @@ main {
     text-decoration: none;
 }
 .hide {
+    min-width: 150px;
+    min-height: 150px;
     margin-bottom: 2em;
 }
 
@@ -62,7 +65,7 @@ main {
     animation-iteration-count: 1;
     animation-duration: 2s;
     border: 2px solid grey;
-    width: 50rem;
+    width: 90%;
     box-shadow: 1px 1px 10px 1px gray;
 }
 .js {
@@ -121,6 +124,7 @@ button:hover {
     align-items: center;
     /* justify-content: center; */
     /* margin-top: 100px; */
+    width: 100%;
     opacity: 1;
     animation: fadeInOpacity;
     animation-timing-function: ease-in;
@@ -128,6 +132,7 @@ button:hover {
     background-color: rgb (25,25,25);
     animation-duration: 2s;
     /* height: 400vh; */
+    padding-bottom: 300px;
 
 }
 
@@ -143,12 +148,12 @@ button:hover {
     animation-iteration-count: 1;
     background-color: rgb (25,25,25);
     animation-duration: 2s;
-    height: 100vh;
+    
 }
 
 .portfolio-title h1 {
     margin-top: 5em;
-    font-size: 3em;
+    font-size: 5rem !important;
     z-index: 1;
 }
 
@@ -156,10 +161,6 @@ button:hover {
     cursor: pointer;
 }
 
-.portfolio-container div {
-    /* height: 100vh; */
-
-}
 
 .gif-container {
     border-radius: 50px;
@@ -191,10 +192,126 @@ button:hover {
     width: 7em;
 }
 
-.language1 {
-    width: 
-}
 
+.scroll a {
+    position: relative;
+    bottom: 0px;
+    left: 43%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color:white;
+    font : normal 400 16px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    
+  }
+  /* .scroll a:hover {
+    opacity: .6;
+  } */
+
+  .scroll {
+      display: flex;
+      justify-content: center;
+  }
+  .scroll a {
+    padding-top: 60px;
+
+    
+  }
+  .scroll p {
+      padding-top: 50px;
+  }
+  .scroll a span {
+    position: absolute;
+    left: calc(50% - 25x);
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    
+  }
+
+  .scroll p {
+      text-align: center;
+  }
+  .scroll a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: white;
+    border-radius: 100%;
+    -webkit-animation: sdb06 2s infinite;
+    animation: sdb06 2s infinite;
+    box-sizing: border-box;
+  }
+
+  @-webkit-keyframes sdb06 {
+    0% {
+      -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb06 {
+    0% {
+      transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 @keyframes fadeInOpacity {
     0% {
         opacity: 0;
@@ -209,15 +326,6 @@ button:hover {
         font-size: 2em;
         margin-bottom: 400px;
     }
-
-    .project-folder, .hide {
-        width: 20%;
-    }
-
-    .project-card {
-        width: 80%;
-    }
-
     .languages {
         width: 80%;
     }
@@ -234,21 +342,14 @@ button:hover {
 
 @media only screen and (max-width: 375px) {
     .portfolio-title {
-        font-size: 2em !important;
-        margin-bottom: 350px;
+        margin-bottom: 100px;
     }
 
-
-    .portfolio-container {
-        height: 1000vh !important;
+    .portfolio-title h1 {
     }
 
-    .project-card {
-        width: 80%;
-    }
-
-    .project-folder {
-        /* width: 30% !important; */
+    .scroll p {
+        padding-top: 30px;
     }
 
     .paragraph {
@@ -267,16 +368,11 @@ button:hover {
 
 }
 
-@media only screen and (max-width: 411px) {
-    .project-folder, .hide {
-        width: 20%;
-    }
+@media only screen and (min-width: 411px) {
+
 
     .portfolio-container {
         height: 800vh;
-    }
-    .project-card {
-        width: 90%;
     }
     .languages {
         width: 80%;
@@ -286,17 +382,17 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 414px) {
-    .project-folder, .hide {
-        width: 10em
-    }
+@media only screen and (min-width: 414px) {
+
 
     .portfolio-container {
         height: 800vh;
     }
-    .project-card {
-        width: 90%;
+
+    .portfolio-title h1 {
+        margin-top: 10rem;
     }
+
 
     
 
