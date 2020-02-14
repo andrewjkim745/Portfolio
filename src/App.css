@@ -17,7 +17,11 @@
 
 .light-mode .nav-links, .light-mode a, .light-mode .first-box, .light-mode .first-box h3, .light-mode .first-box p, .light-mode .second-box, .light-mode .second-box h3, .light-mode .second-box p  {
   background-color: black;
-  color: white;
+}
+
+.light-mode .scroll span {
+  background-color: black;
+  border-color: white;
 }
 
 main {
