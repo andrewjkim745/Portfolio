@@ -4,11 +4,9 @@
   text-align: center;
   background-color: rgb(25, 25, 25);
   height: 100%;
-  /* height: 150vh; */
-  /* width: 100%; */
 }
 
-.light-mode .App, .light-mode h1, .light-mode .nav-container, .light-mode p, .light-mode .home-link, .light-mode .linkedin-link, .light-mode .github-link, .light-mode .mail-link, .light-mode h2, .light-mode .portfolio-container, .light-mode main, .light-mode .first-container, .light-mode .about-container, .light-mode .button, .light-mode .landing-page-container {
+.light-mode .App, .light-mode body, .light-mode h1, .light-mode .nav-container, .light-mode p, .light-mode .home-link, .light-mode .linkedin-link, .light-mode .github-link, .light-mode .mail-link, .light-mode h2, .light-mode .portfolio-container, .light-mode main, .light-mode .first-container, .light-mode .about-container, .light-mode .button, .light-mode .landing-page-container {
   background-color: white;
   color: black;
   transition: background-color 0.3s, color 0.3s;
@@ -17,6 +15,7 @@
 
 .light-mode .nav-links, .light-mode a, .light-mode .first-box, .light-mode .first-box h3, .light-mode .first-box p, .light-mode .second-box, .light-mode .second-box h3, .light-mode .second-box p  {
   background-color: black;
+  color: white;
 }
 
 .light-mode .scroll span {
@@ -30,17 +29,24 @@ main {
   background-color: rgb(25, 25, 25);
 }
 
+@media only screen and (min-width: 320px) {
+  .App {
+    width: 647px;
+  }
+}
 
-@media only screen and (max-width: 360px) {
+
+
+@media only screen and (min-width: 360px) {
 
   .App {
-    width: 600px !important;
+    width: 647px;
   }
 
   
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
   .App {
     width: 812px;
     height: 100%;
@@ -48,17 +54,42 @@ main {
 }
 
 
-@media only screen and (max-width: 411px) {
+@media only screen and (min-width: 411px) {
   .App {
-    width: 565px;
+    width: 647px;
     height: 100%;
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (min-width: 414px) {
   .App {
-    width: 565px;
+    width: 647px;
     height: 100%;
   }
     
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .App {
+    width: 1024px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .App {
+    width: 1440px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .App {
+    width: 2560px;
+    height: 1848px;
+  }
 }

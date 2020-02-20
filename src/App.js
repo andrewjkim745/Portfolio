@@ -29,9 +29,7 @@ class App extends React.Component {
 
 
 
-          <main>
             <Routes />
-          </main>
         </div>
        </div>
     );

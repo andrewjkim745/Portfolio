@@ -122,8 +122,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    /* margin-top: 100px; */
+    min-height: 100%;
+    margin-top: 100px;
+    padding-bottom: 30rem;
     width: 100%;
     opacity: 1;
     animation: fadeInOpacity;
@@ -131,8 +132,7 @@ button:hover {
     animation-iteration-count: 1;
     background-color: rgb (25,25,25);
     animation-duration: 2s;
-    /* height: 400vh; */
-    padding-bottom: 300px;
+    
 
 }
 
@@ -226,7 +226,6 @@ button:hover {
   }
   .scroll a span {
     position: absolute;
-    left: calc(50% - 25x);
     width: 30px;
     height: 50px;
     margin-left: -15px;
@@ -329,10 +328,6 @@ button:hover {
     .languages {
         width: 80%;
     }
-    .portfolio-container {
-        height: 990vh;
-    }
-
     .View-Project {
         font-size: 1.5em !important;
     }
@@ -342,7 +337,6 @@ button:hover {
 
 @media only screen and (max-width: 375px) {
     .portfolio-title {
-        margin-bottom: 100px;
     }
 
     .portfolio-title h1 {
@@ -370,10 +364,6 @@ button:hover {
 
 @media only screen and (min-width: 411px) {
 
-
-    .portfolio-container {
-        height: 800vh;
-    }
     .languages {
         width: 80%;
     }
@@ -385,9 +375,6 @@ button:hover {
 @media only screen and (min-width: 414px) {
 
 
-    .portfolio-container {
-        height: 800vh;
-    }
 
     .portfolio-title h1 {
         margin-top: 10rem;

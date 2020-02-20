@@ -15,7 +15,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     opacity: 1;
-    height: 100vh;
+    margin-top: 20rem;
+    padding-bottom: 40rem;
     background-color: rgb(25, 25, 25);
     animation: fadeInOpacity;
     animation-timing-function: ease-in;
@@ -44,7 +45,6 @@ h1 {
 
 p {
     color: white;
-    font-family: 'Playfair Display', serif;
 }
 
 .cell-number {
@@ -71,9 +71,6 @@ p {
       font-size: 4em;
     }
 
-    .landing-page-container {
-        height: 150vh !important;
-    }
 
     p {
         font-size: 2em;
@@ -87,9 +84,6 @@ p {
       font-size: 2.8em !important;
     }
 
-    .landing-page-container {
-        height: 210vh;
-    }
 
     .icons img {
         width: 10%;
@@ -113,9 +107,6 @@ p {
       p {
           font-size: 1.5em;
       }
-      .landing-page-container {
-          height: 130vh;
-      }
   }
 
   @media only screen and (max-width: 414px) {
@@ -127,9 +118,6 @@ p {
         font-size: 1.5em;
     }
 
-    .landing-page-container {
-        height: 150vh;
-    }
 }
 
 
