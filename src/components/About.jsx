@@ -52,9 +52,9 @@ class About extends React.Component {
                     <Typing speed={10} >
                         <h2>
                             Hi there!
-                        <br></br>
-                            If you want to learn more about me 
-                        <br></br>
+                            <br></br>
+                            If you want to learn about me 
+                            <br></br>
                             Look no further!
                     </h2>
                     </Typing>

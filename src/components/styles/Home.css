@@ -5,7 +5,7 @@ h1 {
     display: block;
     color: white;
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 3.8rem;
     
 }
 
@@ -15,8 +15,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     opacity: 1;
-    margin-top: 20rem;
-    padding-bottom: 40rem;
+    margin-top: 7rem;
     background-color: rgb(25, 25, 25);
     animation: fadeInOpacity;
     animation-timing-function: ease-in;
@@ -45,6 +44,7 @@ h1 {
 
 p {
     color: white;
+    font-size: 2rem;
 }
 
 .cell-number {
@@ -53,6 +53,14 @@ p {
 
 .mail {
     margin-bottom: 3px;
+}
+
+.contact-container {
+    width: 100%;
+}
+
+.icons a img {
+    width: 10%;
 }
 
 
@@ -65,7 +73,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
 
     h1 {
       font-size: 4em;
@@ -77,8 +85,8 @@ p {
     }
   
     
-  }
-  @media only screen and (max-width: 375px) {
+  } */
+  /* @media only screen and (max-width: 375px) {
 
     h1 {
       font-size: 2.8em !important;
@@ -98,26 +106,37 @@ p {
     } */
   
     
-  }
+  /* }
 
-  @media only screen and (max-width: 411px) {
+  /* @media only screen and (max-width: 411px) {
       h1 {
           font-size: 2.5em;
       }
       p {
           font-size: 1.5em;
       }
-  }
+  } */
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 425px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1rem;
     }
 
+}
+
+
+@media only screen and (min-width: 2560px) {
+    .landing-page-container h1 {
+        font-size: 10rem;
+    }
+
+    .contact-container p {
+        font-size: 5rem;
+    }
 }
 
 

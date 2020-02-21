@@ -8,30 +8,32 @@ import Home from './components/Home'
 
 class App extends React.Component {
   state = {
-    mode: ''
+    mode: 'dark-mode'
   }
 
   handleLightMode = () => {
-    if ((this.state.mode.length === 0)) {
+    if ((this.state.mode === 'dark-mode')) {
       this.setState({
         mode: 'light-mode'
       })
-    } else if (this.state.mode.length > 0)
+    } else if (this.state.mode === 'light-mode')
       this.setState({
-        mode: ''
+        mode: 'dark-mode'
       })
   }
   render() {
     return (
+      <>
       <div className={this.state.mode}>
-        <div className="App">
-          <Nav onClick={()=> this.handleLightMode()}/>
+        {/* /* <div className="App"> */ }
+          {/* <Nav onClick={()=> this.handleLightMode()}/> */}
+          <Nav/>
 
 
 
             <Routes />
         </div>
-       </div>
+     </>
     );
   }
 }

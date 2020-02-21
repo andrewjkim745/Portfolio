@@ -6,15 +6,32 @@
   height: 100%;
 }
 
+html, body {
+ height: 100vh;
+ width: 100vw;
+ background-color: rgb(25, 25, 25);
+ /* display: flex; */
+ /* justify-content: center; */
+ /* align-items: center; */
+}
+
 .light-mode .App, .light-mode body, .light-mode h1, .light-mode .nav-container, .light-mode p, .light-mode .home-link, .light-mode .linkedin-link, .light-mode .github-link, .light-mode .mail-link, .light-mode h2, .light-mode .portfolio-container, .light-mode main, .light-mode .first-container, .light-mode .about-container, .light-mode .button, .light-mode .landing-page-container {
   background-color: white;
+  text-align: center;
   color: black;
   transition: background-color 0.3s, color 0.3s;
 }
 
 
+.dark-mode {
+  text-align: center;
+  background-color: rgb(25, 25, 25);
+  width: 100vw;
+}
+
 .light-mode .nav-links, .light-mode a, .light-mode .first-box, .light-mode .first-box h3, .light-mode .first-box p, .light-mode .second-box, .light-mode .second-box h3, .light-mode .second-box p  {
   background-color: black;
+  text-align: center;
   color: white;
 }
 
@@ -23,16 +40,15 @@
   border-color: white;
 }
 
-main {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(25, 25, 25);
-}
 
-@media only screen and (min-width: 320px) {
-  .App {
-    width: 647px;
-  }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* .App {
+    width: 40rem;
+  } */
+
+  /* html, body {
+    display: flex;
+  } */
 }
 
 
@@ -40,50 +56,64 @@ main {
 @media only screen and (min-width: 360px) {
 
   .App {
-    width: 647px;
+    width: 40rem;
   }
+  /* html, body {
+    display: flex;
+  } */
 
   
 }
 
 @media only screen and (min-width: 375px) {
   .App {
-    width: 812px;
+    width: 40rem;
     height: 100%;
   }
+
+  /* html, body {
+    display: flex;
+  } */
 }
 
 
 @media only screen and (min-width: 411px) {
   .App {
-    width: 647px;
+    width: 45rem;
     height: 100%;
   }
+
+   /* html, body {
+    display: flex;
+  } */
 }
 
 @media only screen and (min-width: 414px) {
   .App {
-    width: 647px;
+    width: 45rem;
     height: 100%;
   }
+  /* html, body {
+    display: flex;
+  } */
     
 }
 
 @media only screen and (min-width: 768px) {
   .App {
-    width: 768px;
+    width: 65rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .App {
-    width: 1024px;
+    width: 65rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .App {
-    width: 1440px;
+    width: 100rem;
   }
 }
 

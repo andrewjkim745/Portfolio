@@ -8,29 +8,23 @@ export const Nav = (props) => {
     return (
         <div className='nav-container'>
             <div className="logo">
-                <a className='home-link' href="/">
+                <NavLink exact to='/'>
                     <img className='asianMan' src='https://i.imgur.com/ng6vglp.png' />
-                </a>
+                </NavLink>
             </div>
             <div className="nav">
                 <ul className='nav-links'>
-                    <li>
                         <NavLink exact to='/about' activeClassName='active'>
                             About
                         </NavLink>
-
-                    </li>
-                    <li>
                         <NavLink exact to='/portfolio' activeClassName='active'>
                             Portfolio
                         </NavLink>
-                    </li>
-                    <li>
+
                         <NavLink exact to='/resume' activeClassName='acive'>
                             Resume
                         </NavLink>
-                    </li>
-                    <Button onClick={props.onClick} />
+                    {/* <Button onClick={props.onClick} /> */}
                 </ul>
 
                 

@@ -11,7 +11,7 @@
 li {
     list-style: none;
     margin-right: 40px;
-    font-size: 20px;
+    font-size: 2rem;
     font-family: 'Playfair Display', serif;
 }
 
@@ -28,7 +28,7 @@ li {
 a {
     text-decoration: none;
     color: rgb(25, 25, 25);
-    margin-left: 10px;
+    font-size: 2rem;
 }
 
 a:hover {
@@ -43,8 +43,9 @@ a:hover {
     /* position: fixed; */
     z-index: 1;
     /* margin-left: 30px; */
-    width: 30em;
+    width: 95%;
     height: 5em;
+    padding-left: 0px;
 }
 
 .asianMan:hover {
@@ -74,7 +75,7 @@ a:hover {
   }
 
 
-  @media only screen and (max-width: 360px) {
+  /* @media only screen and (max-width: 360px) {
 
     .nav-links {
       height: 6em !important;
@@ -107,13 +108,13 @@ a:hover {
 
     .asianMan {
       /* width: 10em !important; */
-    }
+    /* }
 
 
 
-  }
+  } */
 
-  @media only screen and (max-width: 411px) {
+  /* @media only screen and (max-width: 411px) {
     a {
       font-size: .9em;
 
@@ -124,16 +125,74 @@ a:hover {
     }
 
 
+  } */
+  @media only screen and (min-width: 0px) and (max-width: 320px) {
+    /* .nav-links {
+      width: 10rem;
+    } */
   }
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 425px) {
     a {
       font-size: .9em;
 
     }
 
+    /* .nav-links {
+      width: 12rem;
+    } */
+
+  }
+
+  @media only screen and (min-width: 1024px) {
+
     .nav-links {
-      width: 25em;
+      width: 80%;
+      padding: 1rem 0px;
     }
+    .asianMan {
+      width: 9rem;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .nav-links {
+      width: 90%;
+      padding: 2rem 0px;
+    }
+
+    .asianMan {
+      width: 11rem;
+    }
+    .nav-links a {
+      font-size: 2.5rem;
+    }
+
+
+  }
+
+
+  @media only screen and (min-width: 2560px) {
+    .nav-links {
+      width: 80%;
+
+      padding: 6rem 0px;
+    }
+
+    /* .scroll a{
+      font-size: 3rem;
+    }
+
+    .scroll p {
+      font-size: 3rem;
+    } */
+
+    .asianMan {
+      width: 20rem;
+    }
+    .nav-links a {
+      font-size: 4rem;
+    }
+
 
   }

@@ -9,7 +9,9 @@
     justify-content: center;
     border-color: 2px yellow;
 }
-
+.type-project {
+    font-size: 8rem;
+}
 
 main {
     border-color: 2px solid yellow;
@@ -93,7 +95,8 @@ main {
     align-items: center;
     justify-content: center;
     border: 2px solid grey;
-    width: 50em;
+    padding: 1rem;
+    /* width: 90%; */
     height: 5em;
     margin: 2em;
     box-shadow: 1px 1px 10px 1px gray;
@@ -152,8 +155,8 @@ button:hover {
 }
 
 .portfolio-title h1 {
-    margin-top: 5em;
-    font-size: 5rem !important;
+    margin-top: 2rem;
+    font-size: 4rem;
     z-index: 1;
 }
 
@@ -320,22 +323,22 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 360px) {
+/* @media only screen and (max-width: 360px) {
     .portfolio-title {
         font-size: 2em;
-        margin-bottom: 400px;
-    }
+        /* margin-bottom: 400px; */
+    /* }
     .languages {
         width: 80%;
     }
     .View-Project {
         font-size: 1.5em !important;
     }
-}
+} */ 
 
 
 
-@media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
     .portfolio-title {
     }
 
@@ -358,10 +361,10 @@ button:hover {
 
     .View-Project {
         font-size: 2em;
-    }
+    } */
 
-}
-
+/* } 
+/* 
 @media only screen and (min-width: 411px) {
 
     .languages {
@@ -370,24 +373,126 @@ button:hover {
     .View-Project {
         font-size: 1.5em;
     }
-}
+} */
 
-@media only screen and (min-width: 414px) {
+@media only screen and (max-width: 425px) {
 
 
 
     .portfolio-title h1 {
-        margin-top: 10rem;
+        font-size: 1.8rem;
+     }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .paragraph {
+        padding: 0px;
+    }
+
+    /* .languages img {
+        width: 2rem;
+    } */
+
+    .type-project {
+        font-size: 2rem;
     }
 
 
     
 
 
-    .languages {
+    /* .languages {
         width: 80%;
     }
     .View-Project {
         font-size: 1.5em;
+    } */
+}
+
+@media only screen and (min-width: 768px) {
+    .js {
+        width: 3rem;
+    }
+
+    .languages img {
+        width: 4rem;
+    }
+
+    .type-project {
+        font-size: 4rem;
+    }
+}
+@media only screen and (min-width: 1024px) {
+
+    .type-project {
+        font-size: 5rem;
+    }
+    .languages img {
+        width: 6rem;
+    }
+
+    .portfolio-title h1 {
+        margin-top: 10rem;
+    }
+}
+@media only screen and (min-width: 1440px) {
+
+
+    .portfolio-title h1 {
+        font-size: 6rem;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+    .hide {
+        width: 20rem;
+    }
+
+    .paragraph {
+        font-size: 3rem;
+      }
+  
+    .languages img {
+        width: 6rem;
+      }
+
+    .View-Project {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 2560px) {
+    .languages {
+        padding: 3rem;
+    }
+
+    .portfolio-title h1 {
+        margin-top: 30rem;
+        font-size: 10rem;
+    }
+
+    .hide {
+        width: 30rem;
+    }
+
+    .project-card h1 {
+        font-size: 6rem;
+    }
+
+    .paragraph {
+        font-size: 4rem;
+    }
+
+    .languages img {
+        width: 10rem;
+    }
+
+    .View-Project {
+        font-size: 5rem;
     }
 }
