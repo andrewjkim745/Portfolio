@@ -134,6 +134,11 @@ p {
         font-size: 10rem;
     }
 
+
+    .icons a img {
+        width: 10rem;
+    }
+
     .contact-container p {
         font-size: 5rem;
     }
