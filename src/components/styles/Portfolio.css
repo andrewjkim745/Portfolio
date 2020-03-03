@@ -256,6 +256,10 @@ button:hover {
     box-sizing: border-box;
   }
 
+  .displayNone {
+      display: none;
+  }
+
   @-webkit-keyframes sdb06 {
     0% {
       -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
@@ -323,61 +327,7 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 360px) {
-    .portfolio-title {
-        font-size: 2em;
-        /* margin-bottom: 400px; */
-    /* }
-    .languages {
-        width: 80%;
-    }
-    .View-Project {
-        font-size: 1.5em !important;
-    }
-} */ 
-
-
-
-/* @media only screen and (max-width: 375px) {
-    .portfolio-title {
-    }
-
-    .portfolio-title h1 {
-    }
-
-    .scroll p {
-        padding-top: 30px;
-    }
-
-    .paragraph {
-        font-size: 2em;
-    }
-
-    
-
-    .languages {
-        width: 80%;
-    }
-
-    .View-Project {
-        font-size: 2em;
-    } */
-
-/* } 
-/* 
-@media only screen and (min-width: 411px) {
-
-    .languages {
-        width: 80%;
-    }
-    .View-Project {
-        font-size: 1.5em;
-    }
-} */
-
 @media only screen and (max-width: 425px) {
-
-
 
     .portfolio-title h1 {
         font-size: 1.8rem;
@@ -391,24 +341,9 @@ button:hover {
         padding: 0px;
     }
 
-    /* .languages img {
-        width: 2rem;
-    } */
-
     .type-project {
         font-size: 2rem;
     }
-
-
-    
-
-
-    /* .languages {
-        width: 80%;
-    }
-    .View-Project {
-        font-size: 1.5em;
-    } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -445,7 +380,7 @@ button:hover {
     }
 
     .project-image {
-        width: 100%;
+        width: 60%;
     }
     .hide {
         width: 20rem;
@@ -456,11 +391,15 @@ button:hover {
       }
   
     .languages img {
-        width: 6rem;
+        width: 5rem;
       }
 
     .View-Project {
         font-size: 3rem;
+    }
+
+    .hide {
+        width: 10rem;
     }
 
 }
@@ -477,7 +416,7 @@ button:hover {
     }
 
     .hide {
-        width: 30rem;
+        width: 15rem;
     }
 
     .project-card h1 {
@@ -489,7 +428,7 @@ button:hover {
     }
 
     .languages img {
-        width: 10rem;
+        width: 9rem;
     }
 
     .View-Project {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './styles/Portfolio.css'
-import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image'
+import FilterButtons from './FilterButtons'
 
 
 
@@ -9,14 +9,14 @@ class Portfolio2 extends Component {
     constructor(props) {
         super(props);
 
-
-
-
         this.state = {
             show: false,
             title: 'Click Below To Show Projects',
             folder: 'https://i.imgur.com/eThEl7g.png',
             hide: 'https://i.imgur.com/rrtXd1f.png',
+            current: false,
+            completed: false,
+            all: true,
             projects: [
                 {
                     id: 1,
@@ -89,7 +89,8 @@ class Portfolio2 extends Component {
                     languages:['https://i.imgur.com/HRz4CW3.png',
                      'https://i.imgur.com/nT545Wr.png',
                      'https://i.imgur.com/ShzYJGK.png',
-                     'https://i.imgur.com/cyQoj2h.png'] 
+                     'https://i.imgur.com/cyQoj2h.png'],
+                    
                 },
                 {
                     id: 3,
@@ -103,7 +104,8 @@ class Portfolio2 extends Component {
                      'https://i.imgur.com/ShzYJGK.png',
                      'https://i.imgur.com/JPNwGUY.png',
                      'https://i.imgur.com/cyQoj2h.png'
-                    ]
+                    ],
+                    
 
                 }
             ]
@@ -132,13 +134,6 @@ class Portfolio2 extends Component {
                                 <h1>{project.title}</h1>
                                 <img className='project-image' src={project.image} />
                                 {this.renderimages(project)}
-                                {/* <div className='languages'>
-                                    <img className={project.language1 === 'https://i.imgur.com/HRz4CW3.png' ? 'js' : ''} src={project.language1}></img>
-                                    <img src={project.language2}></img>
-                                    <img src={project.language3}></img>
-                                    <img src={project.language4}></img>
-                                    <img src={project.language5}></img>
-                                </div> */}
                                 <div className='description'>
                                     <p className='paragraph'>{project.description}</p>
                                     <a className='View-Project' href={project.href}>View Project</a>
@@ -165,13 +160,6 @@ class Portfolio2 extends Component {
                                 <h1>{project.title}</h1>
                                 <img className='project-image' src={project.image} />
                                 {this.renderimages(project)}
-                                {/* <div className='languages'>
-                                    <img className={project.language1 === 'https://i.imgur.com/HRz4CW3.png' ? 'js' : ''} src={project.language1}></img>
-                                    <img src={project.language2}></img>
-                                    <img src={project.language3}></img>
-                                    <img src={project.language4}></img>
-                                    <img src={project.language5}></img>
-                                </div> */}
                                 <div className='description'>
                                     <p className='paragraph'>{project.description}</p>
                                     <a className='View-Project' href={project.href}>View Project</a>
@@ -181,6 +169,77 @@ class Portfolio2 extends Component {
                     })}
                 </>
             )
+        }
+    }
+
+    renderAllComponents = () => {
+        if (this.state.show) {
+            return (
+                <>
+                    <div className={this.state.current || this.state.completed === true ? 'scroll' : 'displayNone'}>
+                        <a><span></span></a>
+                        <p>Scroll</p>
+                    </div>
+                    <h1 className={this.state.current === true ? 'type-project' : 'displayNone'}>Current Projects</h1>
+                    {this.state.currentProjects.map(project => {
+                        return (
+                            <div className={this.state.current === true ? 'project-card' : 'displayNone'} key={project.id}>
+                                <h1>{project.title}</h1>
+                                <img className='project-image' src={project.image} />
+                                {this.renderimages(project)}
+                                <div className='description'>
+                                    <p className='paragraph'>{project.description}</p>
+                                    <a className='View-Project' href={project.href}>View Project</a>
+                                </div>
+                            </div>
+                        )
+                    })}
+                    <h1 className={this.state.completed === true ? 'type-project' : 'displayNone'}>Old Projects</h1>
+                    {this.state.projects.map(project => {
+                        return (
+                            <div className={this.state.completed === true ? 'project-card' : 'displayNone'} key={project.id}>
+                                <h1>{project.title}</h1>
+                                <img className='project-image' src={project.image} />
+                                {this.renderimages(project)}
+                                <div className='description'>
+                                    <p className='paragraph'>{project.description}</p>
+                                    <a className='View-Project' href={project.href}>View Project</a>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </>
+            )
+        }
+    }
+
+    currentClick = (event) => {
+        if (this.state.current === false) {
+            this.setState({
+                current: true,
+                all: false,
+                completed: false
+            }) 
+        }
+    }
+
+    allClick = (event) => {
+        if (this.state.all === false) {
+            this.setState({
+                current: false,
+                all: true,
+                completed: false
+            })
+        }
+    }
+
+    completedClick = (event) => {
+        if (this.state.completed === false) {
+            this.setState({
+                current: false,
+                all: false,
+                completed: true
+            })
         }
     }
 
@@ -199,12 +258,6 @@ class Portfolio2 extends Component {
         console.log(this.state.show)
     }
 
-
-    renderMouse = () => {
-
-    }
-
-
     render() {
         return (
             <div className='portfolio-container'>
@@ -212,8 +265,11 @@ class Portfolio2 extends Component {
                     <h1 >{this.state.show === false ? this.state.title : 'Click again to Hide'}</h1>
                     <img className='hide' src={this.state.show === true ? this.state.hide : this.state.folder} onClick={this.onClick}></img>
                 </div>
-                {this.renderNewComponents()}
-                {this.renderComponents()}
+                <FilterButtons
+                    onClick={this.currentClick}
+                    onClick2={this.completedClick}
+                />
+                {this.renderAllComponents()}
 
 
             </div>
