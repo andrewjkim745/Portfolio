@@ -266,6 +266,7 @@ class Portfolio2 extends Component {
                     <img className='hide' src={this.state.show === true ? this.state.hide : this.state.folder} onClick={this.onClick}></img>
                 </div>
                 <FilterButtons
+                    className='buttons-container'
                     onClick={this.currentClick}
                     onClick2={this.completedClick}
                 />
