@@ -441,6 +441,20 @@ button:hover {
         font-size: 3rem;
     }
 
+    .scroll a span {
+        width: 60px;
+        height: 100px;
+    }
+
+    .scroll {
+        margin-top: 10rem;
+    }
+
+    .scroll p {
+        padding-top: 4rem;
+        font-size: 4rem;
+    }
+
     .hide {
         width: 15rem;
     }
