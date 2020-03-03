@@ -351,6 +351,14 @@ button:hover {
         width: 3rem;
     }
 
+    .scroll {
+        margin-top: 3rem;
+    }
+
+    .scroll p {
+        padding-top: 2rem;
+    }
+
     .languages img {
         width: 4rem;
     }
