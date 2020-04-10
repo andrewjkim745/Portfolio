@@ -441,6 +441,11 @@ button:hover {
         font-size: 3rem;
     }
 
+    button:active, button:focus {
+        outline: 0;
+        border: none;
+    }
+
     .scroll a span {
         width: 60px;
         height: 100px;
