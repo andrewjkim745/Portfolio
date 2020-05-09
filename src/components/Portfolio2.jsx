@@ -166,7 +166,7 @@ class Portfolio2 extends Component {
             return (
                 <>
 
-                    <h1 className='type-project'>Old Projects</h1>
+                    <h1 className='type-project'>Completed Projects</h1>
                     {this.state.projects.map(project => {
                         return (
                             <div className='project-card' key={project.id}>
@@ -192,7 +192,7 @@ class Portfolio2 extends Component {
                         <a><span></span></a>
                         <p>Scroll</p>
                     </div>
-                    <h1 className='type-project'>Current Projects</h1>
+                    <h1 className='type-project'>Current/In Progress Projects</h1>
                     {this.state.currentProjects.map(project => {
                         return (
                             <div className='project-card' key={project.id}>
