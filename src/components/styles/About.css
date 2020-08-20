@@ -44,8 +44,8 @@ h3 {
 
 .second-box {
     margin-top: 100px;
+    margin-bottom: 100px;
     padding: 1rem;
-    /* padding: 50px; */
     background-color: white;
 }
 
@@ -53,80 +53,9 @@ h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* margin-top: 200px; */
     width: 90%;
 }
 
-
-/* 
-@media only screen and (max-width: 360px) {
-    
-
-    .about-container {
-        height: 1000vh !important;
-    }
-
-    .second-container {
-        width: 90%;
-    }
-
-    
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    h1 {
-        /* font-size: 2em; */
-    /* }
-    
-
-} */
-
-/* @media only screen and (max-width: 375px) {
-
-
-    .second-container {
-        width: 90%
-    }
-
-    h3 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-    .about-container {
-        height: 1000vh !important;
-    }
-    .pic {
-        width: 250px;
-    }
-}
-
-@media only screen and (max-width: 411px) {
-
-    .second-container {
-        width: 90%;
-    }
-
-    .about-container {
-        height: 400vh;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-} */
 
 @media only screen and (max-width: 425px) {
     .second-container {

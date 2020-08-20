@@ -102,15 +102,8 @@ main {
     box-shadow: 1px 1px 10px 1px gray;
 }
 
-.View-Project {
-    color: white;
-}
 
 button {
-    background:transparent;
-    border: 2px solid #0099CC;
-    border-radius: 6px;
-    color: #0099CC;
     cursor: pointer;
     transition: ease-in .2s;
 
@@ -119,7 +112,7 @@ button {
 .buttons-container {
     display: flex;
     justify-content: space-evenly;
-    width: 30%;
+    width: 100%;
 }
 
 button:hover {
@@ -196,9 +189,23 @@ button:hover {
 }
 
 .View-Project {
+    color: white;
     background-color: grey;
     border-radius: 20px;
     width: 7em;
+}
+
+.View-Site {
+    color: white;
+    background-color: grey;
+    border-radius: 20px;
+    width: 7em;
+}
+
+.projectButtons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 
@@ -412,6 +419,10 @@ button:hover {
         font-size: 3rem;
     }
 
+    .View-Site {
+        font-size: 3rem;
+    }
+
     .hide {
         width: 10rem;
     }
@@ -477,6 +488,9 @@ button:hover {
     }
 
     .View-Project {
+        font-size: 5rem;
+    }
+    .View-Site {
         font-size: 5rem;
     }
 }

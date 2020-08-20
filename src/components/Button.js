@@ -8,8 +8,7 @@ const Button = (props) => {
             <button className='light-mode-button' onClick={props.onClick}>
                 <img className='moon' src='https://i.imgur.com/jLrGDVl.png'></img>
             </button>
-
-        </div>
+        </div> 
     )
 }
 
