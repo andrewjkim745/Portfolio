@@ -14,8 +14,8 @@ class Portfolio2 extends Component {
             title: 'Click Below To Show Projects',
             folder: 'https://i.imgur.com/eThEl7g.png',
             hide: 'https://i.imgur.com/rrtXd1f.png',
-            current: true,
-            completed: false,
+            current: false,
+            completed: true,
             all: true,
             projects: [
                 {
@@ -223,6 +223,7 @@ class Portfolio2 extends Component {
                         <a><span></span></a>
                         <p>Scroll</p>
                     </div>
+                    
                     <h1 className={this.state.current === true ? 'type-project' : 'displayNone'}>Current Projects</h1>
                     {this.state.currentProjects.map(project => {
                         return (

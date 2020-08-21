@@ -15,7 +15,6 @@ const Home = () => {
                 <TextLoop children={["I am a FullStack Developer", "I am a Gaming Addict", "I am a Dog Lover", "I am a Basketball Fanatic"]} />
                 <br></br>
                 from Long Island
-
             </h1>
             <div className='contact-container'>
                 <p>Contact Me
@@ -31,10 +30,7 @@ const Home = () => {
                     <a className='mail-link' href='mailto:andrewk745@gmail.com?subject=Business proposal'>
                         <img className='mail' src='https://i.imgur.com/yU5hoyX.png'></img>
                     </a>
-
-
                 </div>
-                <p className='cell-number'> Work/Cell: 516-830-1435</p>
             </div>
 
         </div>

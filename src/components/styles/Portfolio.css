@@ -133,7 +133,7 @@ button:hover {
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
     background-color: rgb (25,25,25);
-    animation-duration: 2s;
+    animation-duration: 1s;
     
 
 }
