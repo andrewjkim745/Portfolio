@@ -152,7 +152,6 @@ class Portfolio2 extends Component {
                      'https://i.imgur.com/cyQoj2h.png']
                 },
             ]
-
         }
     }
 
@@ -161,7 +160,6 @@ class Portfolio2 extends Component {
         const languageList = project.languages.map(language => {
             return <img className={language === 'https://i.imgur.com/HRz4CW3.png' ? 'js' : 'language' }src={language}></img>
         })
-
         return <div className='languages'>{languageList}</div>
     }
 
@@ -324,8 +322,6 @@ class Portfolio2 extends Component {
             </div>
         )
     }
-
-
 }
 
 export default Portfolio2;

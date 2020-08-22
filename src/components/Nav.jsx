@@ -24,14 +24,8 @@ export const Nav = (props) => {
                         <NavLink exact to='/resume' activeClassName='acive'>
                             Resume
                         </NavLink>
-                    {/* <Button onClick={props.onClick} /> */}
                 </ul>
-
-                
-
-
-            </div>
-            
+            </div>     
         </div>
     )
 }

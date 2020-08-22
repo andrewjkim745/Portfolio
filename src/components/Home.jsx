@@ -28,15 +28,11 @@ const Home = () => {
                         <img className='github' src='https://i.imgur.com/vLtlcYc.png'></img>
                     </a>
                     <a className='mail-link' href='mailto:andrewk745@gmail.com?subject=Business proposal'>
-                        <img className='mail' src='https://i.imgur.com/yU5hoyX.png'></img>
-                        
+                        <img className='mail' src='https://i.imgur.com/yU5hoyX.png'></img> 
                     </a>
                 </div>
             </div>
-
         </div>
-
-        
     )
 }
 

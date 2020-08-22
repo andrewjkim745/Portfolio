@@ -3,7 +3,6 @@ import './App.css';
 import Nav from './components/Nav'
 import { Routes } from './components/Routes'
 import Home from './components/Home'
-// import Portfolio from './components/Portfolio'
 
 
 class App extends React.Component {
@@ -25,12 +24,7 @@ class App extends React.Component {
     return (
       <>
       <div className={this.state.mode}>
-        {/* /* <div className="App"> */ }
-          {/* <Nav onClick={()=> this.handleLightMode()}/> */}
           <Nav/>
-
-
-
             <Routes />
         </div>
      </>

@@ -15,20 +15,16 @@ class About extends React.Component {
                 <div className='first-box'>
                     <h3>
                         My Journey as a Developer
-
                     </h3>
                     <div className='paragraph'>
                         <p >
-                            I started using computers at a very young age and was always curious about the nuances of the web. About a year ago I decided to finally pursue my interest in computers and learn in a structured environment. I attended a 12 week software engineering immersive at General Assembly a rigorous bootcamp which tested my ability to learn, adapt, and deal with stressful situations.
-
-                            
+                            I started using computers at a very young age and was always curious about the nuances of the web. About a year ago I decided to finally pursue my interest in computers and learn in a structured environment. I attended a 12 week software engineering immersive at General Assembly a rigorous bootcamp which tested my ability to learn, adapt, and deal with stressful situations.                   
                         </p>
                         <p>
                         Although the bootcamp was tough and very time consuming it helped me realize that I had finally found something that I could see myself doing for the rest of my life. I am still passionate to this day and am always willing to learn and face many different challenges.
                         </p>
                     </div>
                 </div>
-
                 <div className='second-box'>
                     <h3>
                         Programming
@@ -58,12 +54,9 @@ class About extends React.Component {
                             Look no further!
                     </h2>
                     </Typing>
-
-
                 </div>
                 <div className='second-container'>
                     {this.renderComponents()}
-
                 </div>
             </div>
         )
