@@ -96,7 +96,6 @@ main {
     justify-content: center;
     border: 2px solid grey;
     padding: 1rem;
-    /* width: 90%; */
     height: 5em;
     margin: 2em;
     box-shadow: 1px 1px 10px 1px gray;
@@ -142,9 +141,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* z-index: -1; */
-    /* display: flex; */
-    /* justify-content: center; */
     animation: fadeInOpacity;
     animation-timing-function: ease-in;
     animation-iteration-count: 1;
@@ -225,10 +221,6 @@ button:hover {
     transition: opacity .3s;
     
   }
-  /* .scroll a:hover {
-    opacity: .6;
-  } */
-
   .scroll {
       display: flex;
       justify-content: center;

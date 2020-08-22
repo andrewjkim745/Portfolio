@@ -69,49 +69,6 @@ p {
     }
 }
 
-/* @media only screen and (max-width: 360px) {
-
-    h1 {
-      font-size: 4em;
-    }
-
-
-    p {
-        font-size: 2em;
-    }
-  
-    
-  } */
-  /* @media only screen and (max-width: 375px) {
-
-    h1 {
-      font-size: 2.8em !important;
-    }
-
-
-    .icons img {
-        width: 10%;
-    }
-
-    .contact-container p {
-        font-size: 1.5em !important;
-    }
-
-    /* a { 
-        font-size: 1.3em;
-    } */
-  
-    
-  /* }
-
-  /* @media only screen and (max-width: 411px) {
-      h1 {
-          font-size: 2.5em;
-      }
-      p {
-          font-size: 1.5em;
-      }
-  } */
 
   @media only screen and (max-width: 425px) {
     h1 {

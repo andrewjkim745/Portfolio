@@ -18,8 +18,6 @@ li {
 
 .nav {
     display: flex;
-    /* justify-content: center; */
-    /* position: fixed; */
     width: 100%;
 }
 
@@ -40,9 +38,7 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     background-color: white;
-    /* position: fixed; */
     z-index: 1;
-    /* margin-left: 30px; */
     width: 95%;
     height: 5em;
     padding-left: 0px;
@@ -75,73 +71,11 @@ a:hover {
   }
 
 
-  /* @media only screen and (max-width: 360px) {
-
-    .nav-links {
-      height: 6em !important;
-      
-    }
-
-    a {
-      font-size: .9em !important;
-    }
-
-    .asianMan {
-      width: 8em !important;
-    }
-  
-    
-  }
-
-
-  @media only screen and (max-width: 375px) {
-
-    a {
-      font-size: .9em;
-    }
-
-    
-    .nav-links {
-      width: 35em;
-      height: 5em !important;
-    }
-
-    .asianMan {
-      /* width: 10em !important; */
-    /* }
-
-
-
-  } */
-
-  /* @media only screen and (max-width: 411px) {
-    a {
-      font-size: .9em;
-
-    }
-
-    .nav-links {
-      width: 25em;
-    }
-
-
-  } */
-  @media only screen and (min-width: 0px) and (max-width: 320px) {
-    /* .nav-links {
-      width: 10rem;
-    } */
-  }
-
   @media only screen and (max-width: 425px) {
     a {
       font-size: .9em;
 
     }
-
-    /* .nav-links {
-      width: 12rem;
-    } */
-
   }
 
   @media only screen and (min-width: 1024px) {
@@ -178,15 +112,6 @@ a:hover {
 
       padding: 6rem 0px;
     }
-
-    /* .scroll a{
-      font-size: 3rem;
-    }
-
-    .scroll p {
-      font-size: 3rem;
-    } */
-
     .asianMan {
       width: 20rem;
     }
